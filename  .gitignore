@@ -1,4 +1,7 @@
 node_modules/
+web/react-app/node_modules/
+web/react-app/.idea/
+web/react-app/node_modules/
 npm-debug.log
 _book/
 demo/*/node_modules
