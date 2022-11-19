@@ -1,9 +1,11 @@
+import React from 'react';
+import BaseInfo from './BaseInfor';
 import './App.scss';
 
 function App() {
   return (
     <div className='app'>
-      <h1>hello, world</h1>
+      <BaseInfo/>
     </div>
   );
 }

@@ -1,9 +1,9 @@
-const Koa = require("koa");
-const httpProxy = require("http-proxy-middleware");
-const bodyparser = require("koa-bodyparser");
-const KoaStatic = require("koa-static");// 处理静态文件
-const config = require("./getConfig");
-const controller = require("./controller");
+const Koa = require('koa');
+const httpProxy = require('http-proxy-middleware');
+const bodyparser = require('koa-bodyparser');
+const KoaStatic = require('koa-static');// 处理静态文件
+const config = require('./getConfig');
+const controller = require('./controller');
 
 
 const app = new Koa();
@@ -27,7 +27,7 @@ const app = new Koa();
 // 	await next();
 // });
 app.use(bodyparser()); // 处理 post请求
-app.use(KoaStatic("./web/lu-app/build"));  // 处理静态文件
+app.use(KoaStatic('./web/lu-app/build'));  // 处理静态文件
 app.use(controller());
 app.listen(config.port);
 console.log(`${config.port} 启动了...`);
